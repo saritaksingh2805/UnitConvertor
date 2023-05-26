@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Unit Converter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Unit Converter</h1>
+		<div class="converter">
+			<div class="input">
+				<label for="from">From:</label>
+				<input type="number" id="from" placeholder="Enter value">
+				<select id="fromUnit">
+					<option value="m">meters</option>
+					<option value="km">kilometers</option>
+					<option value="cm">centimeters</option>
+				</select>
+			</div>
+			<div class="input">
+				<label for="to">To:</label>
+				<input type="number" id="to" placeholder="Converted value" readonly>
+				<select id="toUnit">
+					<option value="m">meters</option>
+					<option value="km">kilometers</option>
+					<option value="cm">centimeters</option>
+				</select>
+			</div>
+			<button id="convertBtn">Convert</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
